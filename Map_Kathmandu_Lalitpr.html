@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_319b7b6b4e06498db2c384da66af8eb9 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_319b7b6b4e06498db2c384da66af8eb9" ></div>
+        
+    
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=2">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <script>
+  $( function() {
+    $( "#maplegend" ).draggable({
+                    start: function (event, ui) {
+                        $(this).css({
+                            right: "auto",
+                            top: "auto",
+                            bottom: "auto"
+                        });
+                    }
+                });
+});
+
+  </script>
+</head>
+<body>
+
+ 
+<div id='maplegend' class='maplegend' 
+    style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
+     border-radius:10px; padding: 20px; font-size:15px; right: 30px; bottom: 10px;'>
+     
+<div class='legend-title'>Cluster Label</div>
+<div class='legend-scale'>
+  <ul class='legend-labels'>
+
+    <li><span style='background:green;opacity:0.7;'></span>Diverse but Low venues region</li>
+    <li><span style='background:blue;opacity:0.7;'></span>Outdoors,Recreation and Entertainment Region</li>
+    <li><span style='background:brown;opacity:0.7;'></span>Shops,Services and Colleges Region</li>
+    <li><span style='background:red;opacity:0.7;'></span>Diverse and high venues region</li>
+
+
+
+
+<div class='legend-title'>Population Density (per sq km)</div>
+<div class='legend-scale'>
+  <ul class='legend-labels'>
+    <li>Low level Population Density : <20,000 </li>
+    <li>Lower Mid level  Population Density : 20,000-40,000 </li>
+    <li>Higher Mid level Population Denisty : 40,000-60,000</li>
+    <li>High level Population Denisty : 60,000-80,000</li>
+    <li> Very High level Population Denisty : >80,000</li>
+
+               
+    
+
+  </ul>
+</div>
+</div>
+ 
+</body>
+</html>
+
+<style type='text/css'>
+  .maplegend .legend-title {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 90%;
+    }
+  .maplegend .legend-scale ul {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    float: left;
+    list-style: none;
+    }
+  .maplegend .legend-scale ul li {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 18px;
+    margin-bottom: 2px;
+    }
+  .maplegend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 16px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    border: 1px solid #999;
+    }
+  .maplegend .legend-source {
+    font-size: 80%;
+    color: #777;
+    clear: both;
+    }
+  .maplegend a {
+    color: #777;
+    }
+</style>
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_319b7b6b4e06498db2c384da66af8eb9 = L.map(
+                                  'map_319b7b6b4e06498db2c384da66af8eb9',
+                                  {center: [27.6588,85.3247],
+                                  zoom: 12.1,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_9bd31a0653374dc788b4e0bfb5902b28 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+        
+    
+            var circle_marker_27e6eb124d2647c9a6ee83800c8d9559 = L.circleMarker(
+                [27.7126782,85.3287033],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Blue",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_3e36a749266e4186bfbe2baeea9927a4 = L.popup({maxWidth: '300'});
+
+            
+                var html_e47ba6152c024094a39535e69f2705d6 = $('<div id="html_e47ba6152c024094a39535e69f2705d6" style="width: 100.0%; height: 100.0%;">Naxal,Ward 1,Kathmandu / Cluster: Outdoors,Recreation and Entertainment region /  Low level Population Density /   Popular Venues:Asian Restaurant , Hotel , Shopping Mall</div>')[0];
+                popup_3e36a749266e4186bfbe2baeea9927a4.setContent(html_e47ba6152c024094a39535e69f2705d6);
+            
+
+            circle_marker_27e6eb124d2647c9a6ee83800c8d9559.bindPopup(popup_3e36a749266e4186bfbe2baeea9927a4);
+
+            
+        
+    
+            var circle_marker_5e66a7bc8e92443f86fe15c9df772560 = L.circleMarker(
+                [27.6926211,85.3380718],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Brown",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Brown",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_cce8c88850994a33b6610b59a7b475a0 = L.popup({maxWidth: '300'});
+
+            
+                var html_7930d78069d646738904d7c00500f155 = $('<div id="html_7930d78069d646738904d7c00500f155" style="width: 100.0%; height: 100.0%;">New Baneshwor,Ward 10,Kathmandu / Cluster: Shops, Services and Colleges region /  Lower Mid level Population Density /   Popular Venues:Fast Food Restaurant , Restaurant , Café</div>')[0];
+                popup_cce8c88850994a33b6610b59a7b475a0.setContent(html_7930d78069d646738904d7c00500f155);
+            
+
+            circle_marker_5e66a7bc8e92443f86fe15c9df772560.bindPopup(popup_cce8c88850994a33b6610b59a7b475a0);
+
+            
+        
+    
+            var circle_marker_8c4ccc77d381483ca72ad6b9ed96d05b = L.circleMarker(
+                [27.695,85.3149],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Green",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_b07928b07b7b444bb9e68ffaad939cba = L.popup({maxWidth: '300'});
+
+            
+                var html_49861deafcd24f52b979e3c0e2b7fe2b = $('<div id="html_49861deafcd24f52b979e3c0e2b7fe2b" style="width: 100.0%; height: 100.0%;">Tripureshwor,Ward 11,Kathmandu / Cluster: Diverse but Low venues region /  Low level Population Density /   Popular Venues:Café , Shopping Mall , Multiplex</div>')[0];
+                popup_b07928b07b7b444bb9e68ffaad939cba.setContent(html_49861deafcd24f52b979e3c0e2b7fe2b);
+            
+
+            circle_marker_8c4ccc77d381483ca72ad6b9ed96d05b.bindPopup(popup_b07928b07b7b444bb9e68ffaad939cba);
+
+            
+        
+    
+            var circle_marker_27e17e6d4c54454e8b05165b42fb5b5d = L.circleMarker(
+                [27.698583,85.299157],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Brown",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Brown",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_aad15e3c273f43d28d2ea34f3d9abdf0 = L.popup({maxWidth: '300'});
+
+            
+                var html_5bcd977ca0844b27b803855969be3fa8 = $('<div id="html_5bcd977ca0844b27b803855969be3fa8" style="width: 100.0%; height: 100.0%;">Kalimati,Ward 12 and 13,Kathmandu / Cluster: Shops, Services and Colleges region /  Low level Population Density /   Popular Venues:Hotel , Asian Restaurant , Café</div>')[0];
+                popup_aad15e3c273f43d28d2ea34f3d9abdf0.setContent(html_5bcd977ca0844b27b803855969be3fa8);
+            
+
+            circle_marker_27e17e6d4c54454e8b05165b42fb5b5d.bindPopup(popup_aad15e3c273f43d28d2ea34f3d9abdf0);
+
+            
+        
+    
+            var circle_marker_a10d63542e5e4a6e8980e0ba8abe0f3c = L.circleMarker(
+                [27.7254063,85.3054571],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Red",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_bd62749158114867ae2f177237667a27 = L.popup({maxWidth: '300'});
+
+            
+                var html_1f9bbb43930c40e1b0751402d8b50287 = $('<div id="html_1f9bbb43930c40e1b0751402d8b50287" style="width: 100.0%; height: 100.0%;">Sohrakhutte,Ward 16,Kathmandu / Cluster: Diverse and High venues region  /  Low level Population Density /   Popular Venues:Hotel , Asian Restaurant , Restaurant</div>')[0];
+                popup_bd62749158114867ae2f177237667a27.setContent(html_1f9bbb43930c40e1b0751402d8b50287);
+            
+
+            circle_marker_a10d63542e5e4a6e8980e0ba8abe0f3c.bindPopup(popup_bd62749158114867ae2f177237667a27);
+
+            
+        
+    
+            var circle_marker_b602efbfe2ce46b3b370513a75bb5b8a = L.circleMarker(
+                [27.7112071,85.3086148],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Red",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_768a6750b44c42d2b25912b0e5a0cef2 = L.popup({maxWidth: '300'});
+
+            
+                var html_98b7908476354cd8a2f0a37271f56ca0 = $('<div id="html_98b7908476354cd8a2f0a37271f56ca0" style="width: 100.0%; height: 100.0%;">Chhetrapati,Ward 17,Kathmandu / Cluster: Diverse and High venues region  /  Lower Mid level Population Density /   Popular Venues:Restaurant , Italian Restaurant , Asian Restaurant</div>')[0];
+                popup_768a6750b44c42d2b25912b0e5a0cef2.setContent(html_98b7908476354cd8a2f0a37271f56ca0);
+            
+
+            circle_marker_b602efbfe2ce46b3b370513a75bb5b8a.bindPopup(popup_768a6750b44c42d2b25912b0e5a0cef2);
+
+            
+        
+    
+            var circle_marker_aabc8480b252494d9b5f6c71a9ea9b08 = L.circleMarker(
+                [27.703,85.3036],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Green",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_7e2733ce238e446a876b57960248d00c = L.popup({maxWidth: '300'});
+
+            
+                var html_e0e9e265409c4652a891defd7969abf5 = $('<div id="html_e0e9e265409c4652a891defd7969abf5" style="width: 100.0%; height: 100.0%;">Bhimsenthan,Ward 18,19,20,21,Kathmandu / Cluster: Diverse but Low venues region /  High level  Population Denisty /   Popular Venues:Café , Historic Site , Asian Restaurant</div>')[0];
+                popup_7e2733ce238e446a876b57960248d00c.setContent(html_e0e9e265409c4652a891defd7969abf5);
+            
+
+            circle_marker_aabc8480b252494d9b5f6c71a9ea9b08.bindPopup(popup_7e2733ce238e446a876b57960248d00c);
+
+            
+        
+    
+            var circle_marker_972f51449d0948ed94793b74b41e35c4 = L.circleMarker(
+                [27.7215082,85.3207646],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Blue",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_008ee17a07fe4f52b614516bda3b0e35 = L.popup({maxWidth: '300'});
+
+            
+                var html_7a8b5dfad55943dda19e4066a2704ae6 = $('<div id="html_7a8b5dfad55943dda19e4066a2704ae6" style="width: 100.0%; height: 100.0%;">Lazimpat,Ward 2,Kathmandu / Cluster: Outdoors,Recreation and Entertainment region /  Low level Population Density /   Popular Venues:Hotel , Café , Restaurant</div>')[0];
+                popup_008ee17a07fe4f52b614516bda3b0e35.setContent(html_7a8b5dfad55943dda19e4066a2704ae6);
+            
+
+            circle_marker_972f51449d0948ed94793b74b41e35c4.bindPopup(popup_008ee17a07fe4f52b614516bda3b0e35);
+
+            
+        
+    
+            var circle_marker_44e9c37cbc794a3e8949cfd3d78739a9 = L.circleMarker(
+                [27.7015,85.308],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Green",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_cdc0b6d869df4efd8a98a74ff23de147 = L.popup({maxWidth: '300'});
+
+            
+                var html_bfb9cd9c1cfa4843a3aa51afca24634b = $('<div id="html_bfb9cd9c1cfa4843a3aa51afca24634b" style="width: 100.0%; height: 100.0%;">Om Bahal,Ward 22,23,24,25,Kathmandu / Cluster: Diverse but Low venues region /  Higher Mid level  Population Denisty /   Popular Venues:Café , Historic Site , Restaurant</div>')[0];
+                popup_cdc0b6d869df4efd8a98a74ff23de147.setContent(html_bfb9cd9c1cfa4843a3aa51afca24634b);
+            
+
+            circle_marker_44e9c37cbc794a3e8949cfd3d78739a9.bindPopup(popup_cdc0b6d869df4efd8a98a74ff23de147);
+
+            
+        
+    
+            var circle_marker_767d9de5ee9a486db179dba98dd19da1 = L.circleMarker(
+                [27.71941,85.315162],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Red",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_565ef60abf304df8ae6fac0375adf17f = L.popup({maxWidth: '300'});
+
+            
+                var html_d0c6cd3397e741f288136f05717d6db8 = $('<div id="html_d0c6cd3397e741f288136f05717d6db8" style="width: 100.0%; height: 100.0%;">Lainchaur,Ward 26 and 27,Kathmandu / Cluster: Diverse and High venues region  /  Lower Mid level Population Density /   Popular Venues:Hotel , Asian Restaurant , Restaurant</div>')[0];
+                popup_565ef60abf304df8ae6fac0375adf17f.setContent(html_d0c6cd3397e741f288136f05717d6db8);
+            
+
+            circle_marker_767d9de5ee9a486db179dba98dd19da1.bindPopup(popup_565ef60abf304df8ae6fac0375adf17f);
+
+            
+        
+    
+            var circle_marker_f2a4b4513326400e808b4f22575f2ea6 = L.circleMarker(
+                [27.7053,85.3149],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Brown",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Brown",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_8caf8cc8550a4188b11882d466166b26 = L.popup({maxWidth: '300'});
+
+            
+                var html_81d36c9bc8ec4366b3dd8f61ec82b955 = $('<div id="html_81d36c9bc8ec4366b3dd8f61ec82b955" style="width: 100.0%; height: 100.0%;">Purano Buspark,Ward 28,Kathmandu / Cluster: Shops, Services and Colleges region /  Low level Population Density /   Popular Venues:Café , Bus Station , Women&#39;s Store</div>')[0];
+                popup_8caf8cc8550a4188b11882d466166b26.setContent(html_81d36c9bc8ec4366b3dd8f61ec82b955);
+            
+
+            circle_marker_f2a4b4513326400e808b4f22575f2ea6.bindPopup(popup_8caf8cc8550a4188b11882d466166b26);
+
+            
+        
+    
+            var circle_marker_6697760bef2c49df8737d6a6f820c965 = L.circleMarker(
+                [27.706321,85.3271617],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Brown",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Brown",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_4907aab7e57d48ee83eea53f1a5eda88 = L.popup({maxWidth: '300'});
+
+            
+                var html_953bc79532a34183924afcb3632cbb66 = $('<div id="html_953bc79532a34183924afcb3632cbb66" style="width: 100.0%; height: 100.0%;">Dillibazar,Ward 29,Kathmandu / Cluster: Shops, Services and Colleges region /  Lower Mid level Population Density /   Popular Venues:Shopping Mall , Hotel , Asian Restaurant</div>')[0];
+                popup_4907aab7e57d48ee83eea53f1a5eda88.setContent(html_953bc79532a34183924afcb3632cbb66);
+            
+
+            circle_marker_6697760bef2c49df8737d6a6f820c965.bindPopup(popup_4907aab7e57d48ee83eea53f1a5eda88);
+
+            
+        
+    
+            var circle_marker_a094a2eb07894aa98fe949e2c4329f6d = L.circleMarker(
+                [27.7330791,85.3288072],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Green",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_1500319818314c56bbad703eb3f3bc4a = L.popup({maxWidth: '300'});
+
+            
+                var html_a787917090d7408495e69abc9e6f7134 = $('<div id="html_a787917090d7408495e69abc9e6f7134" style="width: 100.0%; height: 100.0%;">Maharajgunj,Ward 3,Kathmandu / Cluster: Diverse but Low venues region /  Low level Population Density /   Popular Venues:Asian Restaurant , Soccer Field , Breakfast Spot</div>')[0];
+                popup_1500319818314c56bbad703eb3f3bc4a.setContent(html_a787917090d7408495e69abc9e6f7134);
+            
+
+            circle_marker_a094a2eb07894aa98fe949e2c4329f6d.bindPopup(popup_1500319818314c56bbad703eb3f3bc4a);
+
+            
+        
+    
+            var circle_marker_9621aaa8641740519ecded581e392b71 = L.circleMarker(
+                [27.7082182,85.33138320010978],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Brown",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Brown",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_b82a9529c4dd47b595236c4f05689975 = L.popup({maxWidth: '300'});
+
+            
+                var html_30c563463f714183a04fe06bed2af305 = $('<div id="html_30c563463f714183a04fe06bed2af305" style="width: 100.0%; height: 100.0%;">Gyaneshwor,Ward 30,Kathmandu / Cluster: Shops, Services and Colleges region /  Lower Mid level Population Density /   Popular Venues:Hotel , Shopping Mall , Burger Joint</div>')[0];
+                popup_b82a9529c4dd47b595236c4f05689975.setContent(html_30c563463f714183a04fe06bed2af305);
+            
+
+            circle_marker_9621aaa8641740519ecded581e392b71.bindPopup(popup_b82a9529c4dd47b595236c4f05689975);
+
+            
+        
+    
+            var circle_marker_e12803db64844f3cadc28827af878bf6 = L.circleMarker(
+                [27.6998367,85.3443133],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Green",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_9cee4317d5dc438aa6482eda24994d44 = L.popup({maxWidth: '300'});
+
+            
+                var html_1cd56e50c6cf4d1caba65f0730a98401 = $('<div id="html_1cd56e50c6cf4d1caba65f0730a98401" style="width: 100.0%; height: 100.0%;">Bhimsengola,Ward 31,Kathmandu / Cluster: Diverse but Low venues region /  Lower Mid level Population Density /   Popular Venues:Hotel , Indian Restaurant , Bakery</div>')[0];
+                popup_9cee4317d5dc438aa6482eda24994d44.setContent(html_1cd56e50c6cf4d1caba65f0730a98401);
+            
+
+            circle_marker_e12803db64844f3cadc28827af878bf6.bindPopup(popup_9cee4317d5dc438aa6482eda24994d44);
+
+            
+        
+    
+            var circle_marker_7dfaf33eeab24276b98b0519e6a5af55 = L.circleMarker(
+                [27.679087,85.347599],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Green",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_9d0089c1b9b14916ace1bfcf96dac3fb = L.popup({maxWidth: '300'});
+
+            
+                var html_137dd947062e43a4b8997977a3e116f4 = $('<div id="html_137dd947062e43a4b8997977a3e116f4" style="width: 100.0%; height: 100.0%;">Koteshwor,Ward 32,Kathmandu / Cluster: Diverse but Low venues region /  Low level Population Density /   Popular Venues:Department Store , Vegetarian / Vegan Restaurant , Restaurant</div>')[0];
+                popup_9d0089c1b9b14916ace1bfcf96dac3fb.setContent(html_137dd947062e43a4b8997977a3e116f4);
+            
+
+            circle_marker_7dfaf33eeab24276b98b0519e6a5af55.bindPopup(popup_9d0089c1b9b14916ace1bfcf96dac3fb);
+
+            
+        
+    
+            var circle_marker_e09fd8940f024d128e7bedad2ebcc1b6 = L.circleMarker(
+                [27.7246028,85.3310167],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Green",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_637dfd34cf894bd88e77b0d96f393faa = L.popup({maxWidth: '300'});
+
+            
+                var html_835b46b04b3b46bab5d0d7ead4aae0d8 = $('<div id="html_835b46b04b3b46bab5d0d7ead4aae0d8" style="width: 100.0%; height: 100.0%;">Baluwatar,,Ward 4,Kathmandu / Cluster: Diverse but Low venues region /  Low level Population Density /   Popular Venues:Asian Restaurant , Café , Restaurant</div>')[0];
+                popup_637dfd34cf894bd88e77b0d96f393faa.setContent(html_835b46b04b3b46bab5d0d7ead4aae0d8);
+            
+
+            circle_marker_e09fd8940f024d128e7bedad2ebcc1b6.bindPopup(popup_637dfd34cf894bd88e77b0d96f393faa);
+
+            
+        
+    
+            var circle_marker_f2d896846dfc47019d0ca253362515cd = L.circleMarker(
+                [27.7172307,85.3304488],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Brown",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Brown",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_54717c74914a48dab503745161ed2210 = L.popup({maxWidth: '300'});
+
+            
+                var html_c1b9226dab84442d8207a706064e273b = $('<div id="html_c1b9226dab84442d8207a706064e273b" style="width: 100.0%; height: 100.0%;">Tangal,Ward 5,Kathmandu / Cluster: Shops, Services and Colleges region /  Lower Mid level Population Density /   Popular Venues:Asian Restaurant , Café , Department Store</div>')[0];
+                popup_54717c74914a48dab503745161ed2210.setContent(html_c1b9226dab84442d8207a706064e273b);
+            
+
+            circle_marker_f2d896846dfc47019d0ca253362515cd.bindPopup(popup_54717c74914a48dab503745161ed2210);
+
+            
+        
+    
+            var circle_marker_90f622836ee747f5b468df8b3921427c = L.circleMarker(
+                [27.7220534,85.3620811],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Green",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_7f05529c6eff4de6929fe5436b18b0a5 = L.popup({maxWidth: '300'});
+
+            
+                var html_e7da811cfbff4b0e91ffdcfd1aef6994 = $('<div id="html_e7da811cfbff4b0e91ffdcfd1aef6994" style="width: 100.0%; height: 100.0%;">Bouddha,Ward 6,Kathmandu / Cluster: Diverse but Low venues region /  Low level Population Density /   Popular Venues:Hotel , Café , Asian Restaurant</div>')[0];
+                popup_7f05529c6eff4de6929fe5436b18b0a5.setContent(html_e7da811cfbff4b0e91ffdcfd1aef6994);
+            
+
+            circle_marker_90f622836ee747f5b468df8b3921427c.bindPopup(popup_7f05529c6eff4de6929fe5436b18b0a5);
+
+            
+        
+    
+            var circle_marker_c58ab3dddfa6426ca0c55318046d9317 = L.circleMarker(
+                [27.71336,85.3450409],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Blue",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_a4e14b9fba0145c08cedeff54550f411 = L.popup({maxWidth: '300'});
+
+            
+                var html_d6c39c7059cb446a8672f777b7abe27f = $('<div id="html_d6c39c7059cb446a8672f777b7abe27f" style="width: 100.0%; height: 100.0%;">Mitrapark,Ward 7,Kathmandu / Cluster: Outdoors,Recreation and Entertainment region /  Lower Mid level Population Density /   Popular Venues:Historic Site , Restaurant , Park</div>')[0];
+                popup_a4e14b9fba0145c08cedeff54550f411.setContent(html_d6c39c7059cb446a8672f777b7abe27f);
+            
+
+            circle_marker_c58ab3dddfa6426ca0c55318046d9317.bindPopup(popup_a4e14b9fba0145c08cedeff54550f411);
+
+            
+        
+    
+            var circle_marker_b7cfee28a8364f5c9b5a78f6191d22cc = L.circleMarker(
+                [27.7103357,85.34402476761059],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Brown",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Brown",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_198f9e8b98ee470d862e3a4d8d49358e = L.popup({maxWidth: '300'});
+
+            
+                var html_588b17b5b60542de823099a0e019128f = $('<div id="html_588b17b5b60542de823099a0e019128f" style="width: 100.0%; height: 100.0%;">Jayabageshwori,Ward 8,Kathmandu / Cluster: Shops, Services and Colleges region /  Low level Population Density /   Popular Venues:Hotel , Soccer Stadium , Indian Restaurant</div>')[0];
+                popup_198f9e8b98ee470d862e3a4d8d49358e.setContent(html_588b17b5b60542de823099a0e019128f);
+            
+
+            circle_marker_b7cfee28a8364f5c9b5a78f6191d22cc.bindPopup(popup_198f9e8b98ee470d862e3a4d8d49358e);
+
+            
+        
+    
+            var circle_marker_2bc5050f7fca488892195aa600041004 = L.circleMarker(
+                [27.7097063,85.34640940581787],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Brown",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Brown",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_d9567d4ced6f4379ab06f985824861d1 = L.popup({maxWidth: '300'});
+
+            
+                var html_a2afc511d9d448fba82fc1e1fa72ec17 = $('<div id="html_a2afc511d9d448fba82fc1e1fa72ec17" style="width: 100.0%; height: 100.0%;">Gaushala,Ward 9,Kathmandu / Cluster: Shops, Services and Colleges region /  Low level Population Density /   Popular Venues:Hotel , Soccer Stadium , Indian Restaurant</div>')[0];
+                popup_d9567d4ced6f4379ab06f985824861d1.setContent(html_a2afc511d9d448fba82fc1e1fa72ec17);
+            
+
+            circle_marker_2bc5050f7fca488892195aa600041004.bindPopup(popup_d9567d4ced6f4379ab06f985824861d1);
+
+            
+        
+    
+            var circle_marker_02fb1c1373ea4eae8234086fc55657ca = L.circleMarker(
+                [27.6862,85.3149],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Brown",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Brown",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_1990c412c2764382bfdca923ec5b118b = L.popup({maxWidth: '300'});
+
+            
+                var html_24c23be5840e4f28b0b5cf6d92c273a7 = $('<div id="html_24c23be5840e4f28b0b5cf6d92c273a7" style="width: 100.0%; height: 100.0%;">Kupandole,Ward 10,Lalitpur / Cluster: Shops, Services and Colleges region /  Low level Population Density /   Popular Venues:Café , Restaurant , Asian Restaurant</div>')[0];
+                popup_1990c412c2764382bfdca923ec5b118b.setContent(html_24c23be5840e4f28b0b5cf6d92c273a7);
+            
+
+            circle_marker_02fb1c1373ea4eae8234086fc55657ca.bindPopup(popup_1990c412c2764382bfdca923ec5b118b);
+
+            
+        
+    
+            var circle_marker_2a4438d55dc742abafd466b6ff822ddd = L.circleMarker(
+                [27.6503928,85.3207649],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Green",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_3d5dda1b54de4e4c916f48d48ffc8767 = L.popup({maxWidth: '300'});
+
+            
+                var html_8e9b3018cddb4b9697729ed43af452b7 = $('<div id="html_8e9b3018cddb4b9697729ed43af452b7" style="width: 100.0%; height: 100.0%;">Nakhipot,Ward 14,Lalitpur / Cluster: Diverse but Low venues region /  Low level Population Density /   Popular Venues:BBQ Joint , Restaurant , Arts &amp; Crafts Store</div>')[0];
+                popup_3d5dda1b54de4e4c916f48d48ffc8767.setContent(html_8e9b3018cddb4b9697729ed43af452b7);
+            
+
+            circle_marker_2a4438d55dc742abafd466b6ff822ddd.bindPopup(popup_3d5dda1b54de4e4c916f48d48ffc8767);
+
+            
+        
+    
+            var circle_marker_f00ac603601f44dca969b8f94d1a531b = L.circleMarker(
+                [27.657521,85.3250564],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Green",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_11516b9c771c46a3a6c25a9ae94190e2 = L.popup({maxWidth: '300'});
+
+            
+                var html_9f4a2cd1b0894fa09c98badb3893bc85 = $('<div id="html_9f4a2cd1b0894fa09c98badb3893bc85" style="width: 100.0%; height: 100.0%;">Satdobato,Ward 15,Lalitpur / Cluster: Diverse but Low venues region /  Low level Population Density /   Popular Venues:Soccer Field , Coffee Shop , BBQ Joint</div>')[0];
+                popup_11516b9c771c46a3a6c25a9ae94190e2.setContent(html_9f4a2cd1b0894fa09c98badb3893bc85);
+            
+
+            circle_marker_f00ac603601f44dca969b8f94d1a531b.bindPopup(popup_11516b9c771c46a3a6c25a9ae94190e2);
+
+            
+        
+    
+            var circle_marker_cb8d1d2bb5b1407f85bebd5bf09f0d89 = L.circleMarker(
+                [27.6493,85.3059],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Green",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_8f2905f2acec4ba8ad6f5619b6bc1de6 = L.popup({maxWidth: '300'});
+
+            
+                var html_c9c17734ff604ba89923537bdc9ad0a7 = $('<div id="html_c9c17734ff604ba89923537bdc9ad0a7" style="width: 100.0%; height: 100.0%;">Sainbhu,Ward 18,Lalitpur / Cluster: Diverse but Low venues region /  Low level Population Density /   Popular Venues:Coffee Shop , Restaurant , Ice Cream Shop</div>')[0];
+                popup_8f2905f2acec4ba8ad6f5619b6bc1de6.setContent(html_c9c17734ff604ba89923537bdc9ad0a7);
+            
+
+            circle_marker_cb8d1d2bb5b1407f85bebd5bf09f0d89.bindPopup(popup_8f2905f2acec4ba8ad6f5619b6bc1de6);
+
+            
+        
+    
+            var circle_marker_f172899b75ba4663acc62a3f1e7b11f1 = L.circleMarker(
+                [27.6837719,85.309353],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Brown",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Brown",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_72a9dce1bd7a4b3385932f257073270d = L.popup({maxWidth: '300'});
+
+            
+                var html_85415c03cdfa4859aff3f79cf7ec3a5b = $('<div id="html_85415c03cdfa4859aff3f79cf7ec3a5b" style="width: 100.0%; height: 100.0%;">Sanepa,Ward 2,Lalitpur / Cluster: Shops, Services and Colleges region /  Low level Population Density /   Popular Venues:Coffee Shop , Restaurant , Café</div>')[0];
+                popup_72a9dce1bd7a4b3385932f257073270d.setContent(html_85415c03cdfa4859aff3f79cf7ec3a5b);
+            
+
+            circle_marker_f172899b75ba4663acc62a3f1e7b11f1.bindPopup(popup_72a9dce1bd7a4b3385932f257073270d);
+
+            
+        
+    
+            var circle_marker_8716b3e8d3274947b741331f38bb4da1 = L.circleMarker(
+                [27.6783567,85.3206084],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Blue",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_1b2a021e5b414759bcdd18f08e4d2339 = L.popup({maxWidth: '300'});
+
+            
+                var html_163faf1e8abe47caa822771395e055f6 = $('<div id="html_163faf1e8abe47caa822771395e055f6" style="width: 100.0%; height: 100.0%;">Pulchowk,Ward 3,Lalitpur / Cluster: Outdoors,Recreation and Entertainment region /  Low level Population Density /   Popular Venues:Café , Department Store , Indian Restaurant</div>')[0];
+                popup_1b2a021e5b414759bcdd18f08e4d2339.setContent(html_163faf1e8abe47caa822771395e055f6);
+            
+
+            circle_marker_8716b3e8d3274947b741331f38bb4da1.bindPopup(popup_1b2a021e5b414759bcdd18f08e4d2339);
+
+            
+        
+    
+            var circle_marker_c5ff91508f704593a9f1af89e3208d91 = L.circleMarker(
+                [27.6724402,85.3133757],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Red",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_c1cb97a0390049029a25bb895acb8180 = L.popup({maxWidth: '300'});
+
+            
+                var html_57d2b5daa82b4cde938ea652ab66b52b = $('<div id="html_57d2b5daa82b4cde938ea652ab66b52b" style="width: 100.0%; height: 100.0%;">Jawalakhel,Ward 4,Lalitpur / Cluster: Diverse and High venues region  /  Low level Population Density /   Popular Venues:Café , Restaurant , Bakery</div>')[0];
+                popup_c1cb97a0390049029a25bb895acb8180.setContent(html_57d2b5daa82b4cde938ea652ab66b52b);
+            
+
+            circle_marker_c5ff91508f704593a9f1af89e3208d91.bindPopup(popup_c1cb97a0390049029a25bb895acb8180);
+
+            
+        
+    
+            var circle_marker_73dc40be371349e9af01af1ec476658b = L.circleMarker(
+                [27.6668726,85.3236357],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Green",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_a0021f28ae264ba88b01d83219c0e0fa = L.popup({maxWidth: '300'});
+
+            
+                var html_98ce4ac877d149b591273763aff2637d = $('<div id="html_98ce4ac877d149b591273763aff2637d" style="width: 100.0%; height: 100.0%;">Lagankhel,Ward 5,Lalitpur / Cluster: Diverse but Low venues region /  Low level Population Density /   Popular Venues:Hotel , Restaurant , Indian Restaurant</div>')[0];
+                popup_a0021f28ae264ba88b01d83219c0e0fa.setContent(html_98ce4ac877d149b591273763aff2637d);
+            
+
+            circle_marker_73dc40be371349e9af01af1ec476658b.bindPopup(popup_a0021f28ae264ba88b01d83219c0e0fa);
+
+            
+        
+    
+            var circle_marker_31c9ff82b71742b1a24a20008479e8cd = L.circleMarker(
+                [27.6714,85.3324],
+                {
+  "bubblingMouseEvents": true,
+  "color": "Brown",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "Brown",
+  "fillOpacity": "0.5",
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_319b7b6b4e06498db2c384da66af8eb9);
+            
+    
+            var popup_afc3bb10ac0a4f48bcaaa8b0909a07fb = L.popup({maxWidth: '300'});
+
+            
+                var html_b30ed94db87f483db49c08608ef7c3ff = $('<div id="html_b30ed94db87f483db49c08608ef7c3ff" style="width: 100.0%; height: 100.0%;">Bhol Dhoka,Ward 9,Lalitpur / Cluster: Shops, Services and Colleges region /  Low level Population Density /   Popular Venues:Restaurant , Asian Restaurant , Dumpling Restaurant</div>')[0];
+                popup_afc3bb10ac0a4f48bcaaa8b0909a07fb.setContent(html_b30ed94db87f483db49c08608ef7c3ff);
+            
+
+            circle_marker_31c9ff82b71742b1a24a20008479e8cd.bindPopup(popup_afc3bb10ac0a4f48bcaaa8b0909a07fb);
+
+            
+        
+</script>
